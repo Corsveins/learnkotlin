@@ -1,11 +1,11 @@
 fun main () {
 
     val userName = "Валерий"
-    var greetingsUser = "Доброе утро"
+    var greetingsUser = "Добрый день"
 
     println("${greetingsUser + ", " + userName + "."}")
 
-    greetingsUser = "Доброй ночи"
+    greetingsUser = "Добрый вечер"
 
     println("${greetingsUser + ", " + userName + "."}")
 }
