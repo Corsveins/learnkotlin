@@ -15,18 +15,16 @@
 Уточнение: квадратные скобки в формате выше обозначают границы сообщений — печатать сами скобки не нужно. Каждое сообщение выводится с новой строки, всё — в одном println().
  */
 
-
+const val TODAY_BUSY_TABLES = 13
+const val TOMORROW_BUSY_TABLES = 9
+const val ALL_TABLES = 13
 
 fun main() {
 
-    val todayBusyTables = 13
-    val tommorowBusyTables = 9
-    val allTables = 13
+    val todayAvalibleTables = ALL_TABLES > TODAY_BUSY_TABLES
+    val tommorowAvailableTables = ALL_TABLES > TOMORROW_BUSY_TABLES
 
-    val todayAvalibleTables = todayBusyTables > allTables
-    val tommorowAvailableTables = tommorowBusyTables < allTables
-
-    println("Доступность столиков на сегодня:$todayAvalibleTables \nДоступность столиков на завтра:$tommorowAvailableTables")
+    println("Доступность столиков на сегодня: $todayAvalibleTables \nДоступность столиков на завтра: $tommorowAvailableTables")
 
 
 
