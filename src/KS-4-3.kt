@@ -1,14 +1,15 @@
 
-const val AIR_HUMIDITY: Int = 20
+const val FAVORABLE_AIR_HUMIDITY: Int = 20
 const val SEASON: String = "Зима"
 
 fun main() {
 
-    val weatherToday = true
-    val conditionTent = true
-    val humidityToday = 20
+    val isWeatherToday = true
+    val isConditionTent = true
+    val isHumidityToday = 20
+    val isSeasonToday = "Зима"
 
-    val isReferenceСonditions = (AIR_HUMIDITY == humidityToday && SEASON != "Зима") && (weatherToday && conditionTent)
+    val isReferenceСonditions = (FAVORABLE_AIR_HUMIDITY == isHumidityToday && SEASON != isSeasonToday) && (isWeatherToday && isConditionTent)
 
 
 
