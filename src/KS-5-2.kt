@@ -1,4 +1,4 @@
-const val VALID_AGE = 18
+const val AGE = 18
 fun main() {
 
     println("Введите год своего рождения:")
@@ -6,7 +6,7 @@ fun main() {
     val todayYear = 2026
     val reserchYear = todayYear - userYear
 
-    if (reserchYear >= VALID_AGE) {
+    if (reserchYear >= AGE) {
         println("Показать экран со скрытым контентом")
     }
 }
