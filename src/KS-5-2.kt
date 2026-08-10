@@ -8,7 +8,5 @@ fun main() {
 
     if (reserchYear >= VALID_AGE) {
         println("Показать экран со скрытым контентом")
-    } else {
-        println("Отказать в доступе")
     }
 }
