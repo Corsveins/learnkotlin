@@ -1,15 +1,14 @@
 fun main() {
 
-    println("Введите логин:")
-    println("Введите пароль:")
-
     val adminUser = "Zaphod"
     val adminPassword = "PanGalactic"
 
+    println("Введите логин:")
     val login = readln()
+    println("Введите пароль:")
     val password = readln()
 
-    when{
+    when {
         adminUser != login -> println("Пользователь не найден!.Пройдите регистрацию ")
         password != adminPassword -> println("Пароль не верный!")
         else -> println("""
