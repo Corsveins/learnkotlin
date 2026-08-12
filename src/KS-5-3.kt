@@ -1,7 +1,7 @@
 fun main() {
 
     val correctNumberFirst = 10
-    val correctNumberSecond =  25
+    val correctNumberSecond = 25
 
     println("Введите первое число:")
     val userInputOne = readln().toIntOrNull()
@@ -12,9 +12,11 @@ fun main() {
     if ((correctNumberFirst == userInputOne && correctNumberSecond == userInputTwo) ||
         (correctNumberFirst == userInputTwo && correctNumberSecond == userInputOne)) {
         println("Поздравляем! Вы выиграли главный приз!")
+
     } else if ((correctNumberFirst == userInputOne || correctNumberSecond == userInputTwo)
-        || (correctNumberFirst == userInputTwo || correctNumberSecond == userInputOne)){
+        || (correctNumberFirst == userInputTwo || correctNumberSecond == userInputOne)) {
         println("Вы выиграли утешительный приз!")
+
     } else {
         println("Неудача!")
     }
