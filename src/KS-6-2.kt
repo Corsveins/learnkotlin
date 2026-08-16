@@ -7,5 +7,5 @@ fun main() {
         Thread.sleep(1000)
         count++
     }
-    println("Прошло $countSeconds секундccc")
+    println("Прошло $countSeconds секундc")
 }
