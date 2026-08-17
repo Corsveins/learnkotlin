@@ -1,12 +1,13 @@
 fun main() {
 
     println("Введите количество секунд:")
-    val inputSeconds  = readln().toInt()
-    var i = 0
+    var inputSeconds  = readln().toInt()
+
 
     do {
-        println("Осталось секунд: $i")
-        i++
-    } while (i <= inputSeconds)
+        println("Осталось секунд: $inputSeconds")
+        inputSeconds--
+    } while (inputSeconds > 0)
 
+    println("Время вышло")
 }
