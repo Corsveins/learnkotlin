@@ -15,7 +15,7 @@ fun main() {
         val allResult = randomNumber + randomTwo
         println("Решите пример: $randomNumber + $randomTwo =  ")
         val userInput = readln().toInt()
-        if (userInput == allResult){
+        if (userInput == allResult) {
             println("Добро пожаловать!")
             return
         } else {
