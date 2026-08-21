@@ -6,5 +6,6 @@ fun main() {
         println(i)
         Thread.sleep(1000)
     }
+    
     println("Время вышло")
 }
