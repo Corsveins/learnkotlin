@@ -18,10 +18,8 @@ fun main() {
 
 
     // Шаг 2 проверка длины пароля
-    if (inputLen < 6) {
-        println("Недостаточно длиный пароль:")
-        return
-    }
+    val length = if (inputLen < 6) 6 else inputLen
+
 
     // Шаг 3 Собрать все наборы в один список
     val allList =  dictionaryNumber.toList() + dictionaryUpper.toList() + dictionaryLower.toList()
@@ -32,7 +30,7 @@ fun main() {
     // Шаг 4 Перебрать список:
 
 
-        for (i in 3 until inputLen) {
+        for (i in 3 until length) {
             password += allList.random()
         }
         password = password.toList().shuffled().joinToString("")
