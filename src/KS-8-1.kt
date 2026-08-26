@@ -5,6 +5,7 @@ fun main() {
 
     totalViews.forEach {
         sum += it
+        
     }
     println(sum)
 
