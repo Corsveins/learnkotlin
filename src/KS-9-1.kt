@@ -2,11 +2,8 @@ fun main() {
 
     val ingridient = listOf("Яйца","Хлеб","Яблоко")
 
-    var i = 0
-
+    println("В рецепте есть следующие ингредиенты:")
     ingridient.forEach { elemnt ->
-        println("В рецепте есть следующие ингредиенты:$elemnt")
-        i++
+        println("$elemnt")
     }
-
 }
