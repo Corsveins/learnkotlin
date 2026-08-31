@@ -15,9 +15,9 @@ fun main() {
 
     в конце выведи сообщение со списком всех элементов такого типа: "Теперь в рецепте есть следующие ингредиенты: [список_ингредиентов]"
 */
-    val ingridient = mutableListOf<String>("Хлеб","Яйца","Помидор")
+    val ingridients = mutableListOf<String>("Хлеб","Яйца","Помидор")
 
-    println("В рецепте есть базовые ингредиенты: ${ingridient.joinToString(", ")}")
+    println("В рецепте есть базовые ингредиенты: ${ingridients.joinToString(", ")}")
 
     println("Желаете добавить еще?")
     val userChoise = readln()
@@ -25,9 +25,8 @@ fun main() {
     if (userChoise.equals("да", ignoreCase = true)) {
        println("Какой ингредиент вы хотите добавить?")
        val userCorrectInput = readln()
-       ingridient.add(userCorrectInput)
-       val result = ingridient.joinToString(", ")
-       println("Теперь в рецепте есть следующие ингредиенты: $result")
+       ingridients.add(userCorrectInput)
+       println("Теперь в рецепте есть следующие ингредиенты: ${ingridients.joinToString(", ")}")
     } else {
         return
     }
