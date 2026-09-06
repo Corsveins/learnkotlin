@@ -1,5 +1,5 @@
 
-fun validateLenLoginAndPassword(login:String, password: String): Boolean {
+fun validateLenLoginAndPassword(login: String, password: String): Boolean {
     return login.length < 4 || password.length < 4
 }
 
