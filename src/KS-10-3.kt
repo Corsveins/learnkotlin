@@ -10,14 +10,14 @@ fun main() {
 
 fun generatePassword(len: Int): String {
 
-    val numberList = "0123456789"
-    val specalCharter = "!\"#\$%&'()*+,-./ "
+    val numberString = "0123456789"
+    val specialCharter = "!\"#\$%&'()*+,-./ "
     var password = ""
     for (i in 1 .. len) {
         if(i % 2 == 1) {
-            password += numberList.random()
+            password += numberString.random()
         } else {
-            password += specalCharter.random()
+            password += specialCharter.random()
         }
     }
     return password
