@@ -1,8 +1,8 @@
 class User2 {
     val id: Int = 12334
-    var login: String = "Valera"
+    val login: String = "Valera"
     var password: String = "123456"
-    var email: String = "mcmakar@gmail.com"
+    val email: String = "mcmakar@gmail.com"
     var bio: String = ""
 
     // вывод информации о пользователе в консоль;
