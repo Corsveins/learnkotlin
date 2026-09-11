@@ -5,6 +5,7 @@ class User {
     var email: String = "mcmakar@gmail.com"
 }
 
+
 fun main(){
     val userOne = User()
     val userTwo = User()
